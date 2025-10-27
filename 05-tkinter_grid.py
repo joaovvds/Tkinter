@@ -62,3 +62,17 @@ root.grid_columnconfigure(1, weight=1)
 
 root.mainloop()
 print("Programa finalizado.")
+
+# Segmento do Código,Documentação:
+# "widget.grid(row=R, column=C)",Posicionamento Principal: Define que o widget será colocado na linha R (onde 0 é a primeira linha) e na coluna C (onde 0 é a primeira coluna).
+
+
+# "padx=10, pady=10","Padding (Espaçamento): Adiciona 10 pixels de espaço externo (horizontal e verticalmente, respetivamente) fora do widget, ajudando a separá-lo dos outros elementos."
+
+# "sticky=""W""","Ancoragem: Diz ao widget para se ""colar"" ao lado Oeste (Esquerdo) da sua célula no grid. N (Norte/Topo), S (Sul/Fundo), E (Este/Direita)."
+
+# "sticky=""WE""","Esticar Horizontalmente: Faz o widget esticar-se para preencher toda a largura da célula (ou das células, se usar columnspan)."
+
+# columnspan=2,"Abranger Colunas: Permite que um widget se espalhe por várias colunas (neste caso, 2), como a mesclagem de células numa folha de cálculo."
+
+# "root.grid_columnconfigure(1, weight=1)","Responsividade: Avançado, mas poderoso! Diz ao Tkinter para dar à Coluna 1 um ""peso"" de 1. Quando a janela é redimensionada, toda a largura extra disponível é alocada para colunas com peso (aquela com o maior peso recebe mais), fazendo os widgets dentro delas (como o Entry) expandirem-se."
